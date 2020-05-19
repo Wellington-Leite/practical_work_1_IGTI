@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabalho 1</title>
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <fieldset>
+      <label for="r">(R) Vermelho:</label>
+      <input
+        type="range"
+        min="0"
+        max="255"
+        id="red_slider"
+        class="slider"
+        step="1"
+        value="127"
+      />
+      <input type="text" id="displayR" readonly />
+    </fieldset>
+
+    <fieldset>
+      <label for="g">(G) Verde:</label>
+      <input
+        type="range"
+        min="0"
+        max="255"
+        id="green_slider"
+        class="slider"
+        step="1"
+        value="127"
+      />
+      <input type="text" id="displayG" readonly />
+    </fieldset>
+
+    <fieldset>
+      <label for="b">(B) Azul:</label>
+      <input
+        type="range"
+        min="0"
+        max="255"
+        id="blue_slider"
+        class="slider"
+        step="1"
+        value="127"
+      />
+      <input type="text" id="displayB" readonly />
+    </fieldset>
+    <!-- div display color -->
+    <div id="colorRange"></div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
